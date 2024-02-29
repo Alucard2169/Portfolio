@@ -21,7 +21,7 @@ const MediaLinks = () => {
       },
       {
         id: 3,
-        link: "#",
+        link: "https://github.com/Alucard2169/Portfolio/raw/main/document/Deepanshu_Resume.pdf",
         content: "Resume",
         label: "Get my Resume",
         icon: <IoDocumentText/>,
