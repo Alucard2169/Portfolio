@@ -27,7 +27,8 @@ function App() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) setSection(Number(entry.target.dataset.section));
+          if (entry.isIntersecting && entry.target instanceof HTMLElement)
+            setSection(Number(entry.target.dataset.section));
         });
       },
       { root: null, rootMargin: "0px", threshold: 0.5 }
