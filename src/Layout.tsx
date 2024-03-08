@@ -7,7 +7,7 @@ type layoutProps = {
 
 const Layout = ({children}:layoutProps) => {
     return ( 
-        <main className="px-4 sm:px-8 py-4 bg-MAIN w-full h-auto relative">
+        <main className="px-4 sm:px-10 bg-MAIN w-full h-auto relative">
             <Navbar/>
             {children}
         </main>

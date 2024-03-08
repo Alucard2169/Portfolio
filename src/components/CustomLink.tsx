@@ -14,10 +14,6 @@ const CustomLink = ({
   icon,
 }: customLinkProps) => {
 
-
-  const scroll = window.scrollY;
-  console.log(scroll)
-
   return (
     <a
       href={link}

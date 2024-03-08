@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { AiOutlineApi } from "react-icons/ai";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFiletypeScss } from "react-icons/bs";
@@ -10,7 +13,6 @@ import { PiFileSqlBold } from "react-icons/pi";
 import { SiChakraui, SiExpress, SiJsonwebtokens, SiMysql, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import SectionHead from "./components/SectionHead";
-
 
 
 
@@ -44,14 +46,16 @@ const Skills = () => {
 
 
   
-
+  useEffect(() => {
+   AOS.init()
+ },[])
 
   return (
     <section id="skills" className="pt-14 sm:pt-24">
       <SectionHead />
-      <section className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <section className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4" >
         {skillsArray.map((skill) =>
-          <p key={skill.id} className="flex gap-2 sm:gap-4 text-xl font-roboto text-white items-center mb-6"><span className="text-2xl text-MAIN">{skill.icon}</span> {skill.name}</p>
+          <p key={skill.id} className="flex gap-2 sm:gap-4 text-md sm:text-lg font-roboto text-white items-center mb-6"><span className="text-2xl text-MAIN">{skill.icon}</span> {skill.name}</p>
         )}
       </section>
     </section>

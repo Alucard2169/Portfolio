@@ -1,70 +1,12 @@
-import { ReactNode } from "react";
 import { AiOutlineApi } from "react-icons/ai";
 import { BsFiletypeScss } from "react-icons/bs";
-import { CgWebsite } from "react-icons/cg";
-import { FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiChakraui, SiSupabase, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import ProjectsItem from "./components/ProjectCard";
 import SectionHead from "./components/SectionHead";
 
 
-type ProjectsItemProps = {
-  id: number;
-  title: string;
-  points: string[];
-  stack: ReactNode[];
-  homepage: string;
-  github: string;
-};
-
-const ProjectsItem = ({
-  title,
-  points,
-  stack,
-  homepage,
-  github,
-}: ProjectsItemProps) => (
-  <section className="outline outline-MAIN outline-1 h-full rounded-md p-4 w-full">
-    <section className="flex sm:flex-row flex-col gap-4 sm:gap-0 items-center justify-between font-roboto">
-      <h3 className="text-NEUTRAL text-2xl font-bold self-start inline-flex gap-2">
-        {title}
-      </h3>
-      <aside className="flex gap-2 self-end">
-        <a
-          href={github}
-          target="_blank"
-          className=" bg-NEUTRAL p-2 rounded-md hover:outline-MAIN outline outline-1 hover:bg-transparent hover:text-NEUTRAL transition-all duration-75"
-        >
-          <span className="flex items-center gap-2 text-sm sm:text-lg">
-            <FaGithub />
-            Github
-          </span>
-        </a>
-        <a
-          href={homepage}
-          className="ml-6 bg-NEUTRAL p-2 rounded-md flex items-center hover:outline-MAIN outline outline-1 hover:bg-transparent hover:text-NEUTRAL transition-all duration-75"
-        >
-          <span className="flex items-center gap-2 text-sm sm:text-lg">
-            <CgWebsite />
-            Homepage
-          </span>
-        </a>
-      </aside>
-    </section>
-    <article className="mt-6 w-full pl-6">
-      <ul className="list-disc flex flex-col gap-4 sm:pl-0">
-        {points.map((point, i) => (
-          <li className="text-white text-[.9rem]" key={i}>
-            {point}
-          </li>
-        ))}
-      </ul>
-    </article>
-    <hr className="my-6" />
-    <aside className="flex gap-4">{stack.map((tech: ReactNode) => tech)}</aside>
-  </section>
-);
 
 const Projects = () => {
 
@@ -186,9 +128,9 @@ const Projects = () => {
   return (
     <section id="projects" className="pt-14 sm:pt-24">
       <SectionHead />
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 w-full">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 w-full">
         {projectData.map((obj) => (
-          <ProjectsItem {...obj} key={obj.id} />
+          <ProjectsItem {...obj} key={obj.id}/>
         ))}
       </div>
     </section>
