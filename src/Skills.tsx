@@ -5,14 +5,14 @@ import { AiOutlineApi } from "react-icons/ai";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFiletypeScss } from "react-icons/bs";
 import { DiBootstrap, DiMongodb } from "react-icons/di";
-import { FaCss3Alt, FaHtml5, FaLinux, FaNodeJs, FaReact } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa6";
+import { FaCss3Alt, FaHtml5, FaLinux, FaNodeJs, FaReact, FaGitAlt, FaPython } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
 import { IoLogoDocker, IoLogoJavascript } from "react-icons/io5";
 import { PiFileSqlBold } from "react-icons/pi";
 import { SiChakraui, SiExpress, SiJsonwebtokens, SiMysql, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import SectionHead from "./components/SectionHead";
+
 
 
 
@@ -42,6 +42,7 @@ const Skills = () => {
    { id: 21, name: "Git", icon: <FaGitAlt/> },
    { id: 22, name: "JWT", icon: <SiJsonwebtokens/> },
    { id: 23, name: "Linux", icon: <FaLinux/> },
+   { id: 24, name: "Python", icon: <FaPython/> }
  ];
 
 
