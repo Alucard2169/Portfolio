@@ -10,7 +10,7 @@ type ProjectsItemProps = {
   title: string;
   points: string[];
   stack: ReactNode[];
-  homepage: string;
+  homepage: string | undefined;
   github: string;
 };
 
@@ -53,7 +53,7 @@ const ProjectsItem = ({
                 Github
               </span>
             </a>
-            <a
+            {homepage != undefined ? ( <a
               href={homepage}
               aria-label="project homepage link"
               target="_blank"
@@ -63,7 +63,7 @@ const ProjectsItem = ({
                 <CgWebsite />
                 Homepage
               </span>
-            </a>
+            </a>) : null}
           </aside>
         </section>
         <article className="mt-6 w-full pl-6">

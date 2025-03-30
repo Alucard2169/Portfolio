@@ -5,7 +5,9 @@ import { SiChakraui, SiSupabase, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import ProjectsItem from "./components/ProjectCard";
 import SectionHead from "./components/SectionHead";
-
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiJellyfin } from "react-icons/si";
 
 
 const Projects = () => {
@@ -123,6 +125,51 @@ const Projects = () => {
       homepage: "https://movie-database-alpha.vercel.app/",
       github: "https://github.com/Alucard2169/Movie-Database",
     },
+    {
+      id: 4,
+      title: "Jellyfin Dashboard",
+      points: [
+        "A self-hosted media server dashboard built with NextJS, FastAPI, TypeScript, and TailwindCSS.",
+        "Displays real-time computer stats, Jellyfin logs with filtering, known devices, and available libraries.",
+        "Implements authentication using bcrypt for password hashing and environment variables for secure storage."
+      ],
+        stack: [
+          <TbBrandNextjs
+            aria-label="NextJS"
+            title="NextJS"
+            className="text-NEUTRAL text-3xl"
+          />,
+          <AiOutlineApi
+            aria-label="RestfulAPI"
+            title="RestfulAPI"
+            className="text-NEUTRAL text-3xl"
+          />,
+          <SiTailwindcss
+          aria-label="TailwindCSS"
+          title="tailwindCSS"
+          className="text-NEUTRAL text-3xl"
+        />,
+        <FaNodeJs
+          aria-label="NodeJS"
+          title="NodeJS"
+          className="text-NEUTRAL text-3xl"
+          />,
+          <SiExpress
+            aria-label="ExpressJS"
+            title="ExpressJS"
+            className="text-NEUTRAL text-3xl"
+          />,
+          <SiJellyfin
+            aria-label="Jellyfin"
+            title="Jellyfin"
+            className="text-NEUTRAL text-3xl"
+          />,
+
+      ],
+      homepage: undefined,
+      github: "https://github.com/Alucard2169/JellyfinDashboard"
+    }
+    
   ];
 
   return (
