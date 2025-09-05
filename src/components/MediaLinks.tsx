@@ -23,13 +23,6 @@ const MediaLinks = () => {
       icon: <FaLinkedin />,
     },
     {
-      id: 3,
-      link: "https://github.com/Alucard2169/Portfolio/raw/main/documents/Deepanshu_Resume.pdf",
-      content: "Resume",
-      label: "Get my Resume",
-      icon: <IoDocumentText />,
-    },
-    {
       id: 4,
       link: "mailto:deepanshu.devwork@gmail.com",
       content: "Email Me",
