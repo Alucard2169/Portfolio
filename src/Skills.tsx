@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import { AiOutlineApi } from "react-icons/ai";
 import { BiLogoPostgresql } from "react-icons/bi";
