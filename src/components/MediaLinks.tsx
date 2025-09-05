@@ -2,7 +2,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoDocumentText } from "react-icons/io5";
 import { MdAlternateEmail } from "react-icons/md";
 import CustomLink from "./CustomLink";
 
